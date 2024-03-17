@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Recipe Management</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Recipe Management</h1>
+    <hr>
+  </div>
+  <br>
+    
+  <div class="container">
+    <h1>Add Recipe</h1>
+    <form action="RecipeAddServlet" method="get">
+      <div class="form-group">
+        <label for="recipeId">Recipe Id:</label>
+        <input type="text" id="recipeId" name="id">
+      </div>
+      <div class="form-group">
+        <label for="recipeName">Recipe Name:</label>
+        <input type="text" id="recipeName" name="rname">
+      </div>
+      <div class="form-group">
+        <label for="recipeIngredients">Recipe Ingredients:</label>
+        <input type="text" id="recipeIngredients" name="rin">
+      </div>
+      <div class="form-group">
+        <label for="recipeInstructions">Recipe Instructions:</label>
+        <input type="text" id="recipeInstructions" name="rdes">
+      </div>
+      <input type="submit" value="Add Recipe">
+    </form>
+   
+  </div>
+  
+  <!--  Delete-->
+  <div class="container">
+    <h1>Delete Recipe</h1>
+    <form action="RecipeDeleteServlet" method="get">
+      <div class="form-group">
+        <label for="recipeId">Recipe Id:</label>
+        <input type="text" id="recipeId" name="id">
+      </div>
+      
+      <input type="submit" value="Delete Recipe">
+    </form>
+   
+  </div>
+  
+  
+  <!-- Update -->
+  
+  <div class="container">
+
+    <h1>Update Recipe</h1>
+    <form action="RecipeUpdateServlet" method="get">
+      <div class="form-group">
+        <label for="recipeId">Recipe Id:</label>
+        <input type="text" id="recipeId" name="id">
+      </div>
+      <div class="form-group">
+        <label for="recipeName">Recipe Name:</label>
+        <input type="text" id="recipeName" name="rname">
+      </div>
+      <div class="form-group">
+        <label for="recipeIngredients">Recipe Ingredients:</label>
+        <input type="text" id="recipeIngredients" name="rin">
+      </div>
+      <div class="form-group">
+        <label for="recipeInstructions">Recipe Instructions:</label>
+        <input type="text" id="recipeInstructions" name="rdes">
+      </div>
+      <input type="submit" value="Update Recipe">
+    </form>
+   
+  </div>
+  
+  <!--  Read All-->
+  <div class="container">
+    <h1>View All Recipe</h1>
+    <form action="RecipeReadServlet" method="get">
+    
+      <input type="submit" value="View All Recipe">
+    </form>
+   
+  </div>
+  
+</body>
+</html>
